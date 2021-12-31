@@ -1,0 +1,72 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes Animation {
+    from{
+        opacity: 0;
+        top: 20%;
+    }
+    to{
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+@keyframes AnimationZoom {
+    from{
+        transform: scale(0.5);
+        opacity: 0
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-mess{
+    animation: AnimationZoom linear 0.2s;
+}
+
+
+.form{
+    animation: Animation linear 0.5s;
+}
+.form-signin{
+    animation: Animation linear 0.5s;
+}
+.linner, .linner2{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+} 
+
+.control input:focus ~ span{
+    width: 100%;
+}
+.control.error span{
+    background: #ea7a5b;
+}
+.control input.error{
+    border-bottom-color: #ea7a5b;
+}
+.ellipsis{
+    display: -webkit-box;
+    max-height: 6.2rem;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: 4;
+    line-height: 1.6rem;
+}
+.footer{
+    background-image: url('/img/world_map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}

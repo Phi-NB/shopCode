@@ -1,0 +1,971 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./dist/style.css">
+    <link rel="stylesheet" href="./dist/app.css">
+</head>
+<body class="">
+    <header class="bg-gradient-to-r from-[#d6ff7f] to-[#00b3cc]">
+        <div class="header max-w-screen-xl mx-auto">
+            <div class="narbar flex justify-between py-4 items-center text-[#fff]">
+                <div class="logo">
+                    <h3 class="text-2xl">Code Make</h3>
+                </div>
+                <div class="menu text-base font-semibold">
+                    <ul class="menu-list flex">
+                        <li class="menu-item ml-4 py-1">
+                            <a href="#" class="menu-link hover:no-underline hover:text-gray-300 underline">Trang chủ</a>
+                        </li>
+                        <li class="menu-item ml-4 py-1">
+                            <a href="" class="menu-link hover:no-underline hover:text-gray-300">Giới thiệu</a>
+                        </li>
+                        <li class="menu-item ml-4 py-1 relative group">
+                            <a href="" class="menu-link hover:no-underline hover:text-gray-300">Source code</a>
+                            <ul class="submenu absolute hidden group-hover:block left-9 top-[100%] py-[6px] px-[10px] w-40 before:block before:absolute before:content-[''] before:w-full before:h-3 bg-[#fff] z-10 rounded-lg text-gray-500">
+                                <li class="submenu-item py-2">
+                                    <a href="" class="submenu-link hover:no-underline hover:text-[#dadada] leading-4">Kho source</a>
+                                </li>
+                                <li class="submenu-item py-2">
+                                    <a href="" class="submenu-link hover:no-underline hover:text-[#dadada] leading-4">Dự án C#</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item ml-4 py-1">
+                            <a href="" class="menu-link hover:no-underline hover:text-gray-300">Blog</a>
+                        </li>
+                        <li class="menu-item ml-4 py-1">
+                            <a href="" class="menu-link hover:no-underline hover:text-gray-300">Liên hệ</a>
+                        </li>
+                        <li class="menu-item ml-4 py-1">
+                            <a href="" class="menu-link hover:no-underline hover:text-gray-300">Tìm kiếm</a>
+                        </li>
+                        <li class="menu-item ml-4 py-1 cursor-pointer">
+                            <p class="menu-link signin-open hover:no-underline hover:text-gray-300">Đăng ký</p>
+                        </li>
+                        <li class="login-open menu-item ml-4 px-2 py-1 border-solid border-2 border-[#fff] rounded-2xl cursor-pointer hover:bg-[#b2ffda]">
+                            <p class="menu-link hover:no-underline ">Đăng nhập</p>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="slider h-96 w-full mt-5 max-w-screen-xl mx-auto pb-9">
+            <div id="carouselId" class="carousel slide w-full h-full" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselId" data-slide-to="0" class="active hidden"></li>
+                    <li data-target="#carouselId" data-slide-to="1" class="hidden"></li>
+                    <li data-target="#carouselId" data-slide-to="2" class="hidden"></li>
+                </ol>
+                <div class="carousel-inner w-full h-full" role="listbox">
+                    <div class="h-full w-full carousel-item active">
+                        <div class="flex justify-between">
+                            <div>
+                                <h1 class="text-[#a7a1a1] text-[50px]">Code Chạy đa nền tảng +</h1>
+                                <h1 class="text-[#a7a1a1] text-[40px]">Nhiều ngôn ngữ khả dụng</h1>
+                                <h1 class="text-[#a7a1a1] text-[30px]">Giá cả hợp lý</h1>
+                            </div>
+                            <div>
+                                <img src="./img/laptop.png" alt="" class="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-full w-full carousel-item">
+                        <div class="flex justify-between">
+                            <div class="w-[700px] h-full">
+                                <img src="./img/anhCode.jpg" alt="" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h1 class="text-[#fff] text-[50px]">Sàn Code thương mại</h1>
+                                <h1 class="text-[#fff] text-[40px]">Hàng đầu cho developer</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-full w-full carousel-item">
+                        <div class="flex justify-between">
+                            <div>
+                                <h1 class="text-[#a7a1a1] text-[50px]">Cam kết</h1>
+                                <h1 class="text-[#a7a1a1] text-[40px]">Hỗ trợ từ người bán</h1>
+                                <h1 class="text-[#a7a1a1] text-[30px]">(100% HÀI LÒNG)</h1>
+                            </div>
+                            <div class="w-[700px] h-full">
+                                <img src="./img/anhCode1.png" alt="" class="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev z-0" href="#carouselId" role="button" data-slide="prev">
+                    <span class="" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 font-black font-xl" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </span>
+                </a>
+                <a class="carousel-control-next z-0" href="#carouselId" role="button" data-slide="next">
+                    <span class="" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 font-black font-xl" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="content mt-6 mx-auto">
+        <div class="source max-w-screen-xl mx-auto relative mt-[40px] py-[40px] px-[20px]">
+            <h2 class="text-center px-[10px] text-4xl text-[#a7a1a1] mb-4 before:content[''] before:absolute before:w-[140px] before:h-[4px] before:block before:bg-[#5ed4aa] before:left-[50%] before:translate-x-[-50%] before:top-[20px]">Website Nổi Bật</h2>
+            <div class="flex justify-between flex-wrap">
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+                <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                    <div class="w-[200px]">
+                        <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                    </div>
+                    <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                    <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                    <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                    <p class="flex text-[#e8b025] my-[6px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                    </p>
+                    <div class="flex">
+                        <img src="./img/avatar.jpg" alt="">
+                        <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center mt-5">
+                <a href="" class="w-[142px] h-[42px] bg-[#fff] border-[#5ed4aa] border-solid border-[1px] rounded-lg flex justify-center items-center text-[#1fbec1] hover:text-[#fff] hover:bg-[#1fbec1] hover:no-underline transition ease-in-out">
+                    <span>Xem thêm</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="software mb-[40px] py-[40px] px-[20px] bg-[#f5f5f5]">
+            <div class="relative max-w-screen-xl mx-auto">
+                <h2 class="text-center px-[10px] text-4xl text-[#a7a1a1] mb-4 before:content[''] before:absolute before:w-[180px] before:h-[4px] before:block before:bg-[#5ed4aa] before:left-[50%] before:translate-x-[-50%] before:top-[-20px]">Phần Mền Nổi Bật</h2>
+                <div class="flex justify-between flex-wrap">
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#fff] mt-[40px] p-[10px] shadow shadow-blue-500/40 hover:translate-y-[-12px] transition ease-in-out">
+                        <div class="w-[200px]">
+                            <img src="https://i.pinimg.com/originals/c8/03/61/c80361d21d756f0fe6255289f39d7b57.png" alt="" class="w-[200px] h-[200px]">
+                        </div>
+                        <p class="text-[#7ec72f] text-[16px] mt-[6px]">C#</p>
+                        <a href="" class="text-[20px] font-medium hover:text-[#cf131f] hover:no-underline">Đồ án tốt nghiệp C#</a>
+                        <p class="text-[#cf131f] font-medium mb-[6px]">399.999Đ</p>
+                        <p class="flex text-[#e8b025] my-[6px]">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </p>
+                        <div class="flex">
+                            <img src="./img/avatar.jpg" alt="">
+                            <p class="ml-[4px]">Nguyễn Bá Phi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-5">
+                    <a href="" class="w-[142px] h-[42px] bg-[#fff] border-[#5ed4aa] border-solid border-[1px] rounded-lg flex justify-center items-center text-[#1fbec1] hover:text-[#fff] hover:bg-[#1fbec1] hover:no-underline transition ease-in-out">
+                        <span>Xem thêm</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="blog relative max-w-screen-xl mx-auto mt-[40px] py-[40px] px-[20px]">
+            <h2 class="text-center px-[10px] text-4xl text-[#a7a1a1] mb-4 before:content[''] before:absolute before:w-[120px] before:h-[4px] before:block before:bg-[#5ed4aa] before:left-[50%] before:translate-x-[-50%] before:top-[20px]">Blog Chia Sẻ</h2>
+            <div class="flex">
+                <div class="flex p-[20px]">
+                    <img src="./img/blog.jpg" alt="" class="h-[158px] w-[166px] rounded-xl">
+                    <div class="ml-[20px] ">
+                        <h1 class="text-[20px] font-medium text-[#1fbec1] hover:text-[#378292] cursor-pointer">Cậu học trò chế tạo cánh tay robot, các giáo sư tiến sĩ Việt Nam ở đâu</h1>
+                        <p class="mt-[10px] ellipsis">
+                            Không phải là các nhà khoa học họ không làm được, mà là họ thấy không cần làm mà thôi. Nói chung là, các giáo sư tiến sĩ, nhà khoa học họ có nhiệm vụ riêng của họ, mỗi người một việc, tuổi nhỏ làm việc nhỏ tùy theo sức của mình.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex p-[20px] ">
+                    <img src="./img/blog1.png" alt="" class="h-[158px] w-[166px] rounded-xl">
+                    <div class="ml-[20px]">
+                        <h1 class="text-[20px] font-medium text-[#1fbec1] hover:text-[#378292] cursor-pointer">Lập trình viên viết blog, làm freelance, youtuber, học UI UX, học Photoshop để làm gì?</h1>
+                        <p class="mt-[10px] ellipsis">
+                            Là 1 lập trình viên thì có nên viết blog, làm freelance, youtuber, học UI UX, học về Photoshop và nhiều cái khác không ? Theo quan điểm của một người có tinh thần ham học hỏi là chính như mình thì khi làm những cái mình kể trên mình học được rất là nhiều thứ chứ không chỉ lập trình viên chỉ biết code thôi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex p-[20px]">
+                    <img src="./img/blog.jpg" alt="" class="h-[158px] w-[166px] rounded-xl">
+                    <div class="ml-[20px] ">
+                        <h1 class="text-[20px] font-medium text-[#1fbec1] hover:text-[#378292] cursor-pointer">Cậu học trò chế tạo cánh tay robot, các giáo sư tiến sĩ Việt Nam ở đâu</h1>
+                        <p class="mt-[10px] ellipsis">
+                            Không phải là các nhà khoa học họ không làm được, mà là họ thấy không cần làm mà thôi. Nói chung là, các giáo sư tiến sĩ, nhà khoa học họ có nhiệm vụ riêng của họ, mỗi người một việc, tuổi nhỏ làm việc nhỏ tùy theo sức của mình.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex p-[20px] ">
+                    <img src="./img/blog1.png" alt="" class="h-[158px] w-[166px] rounded-xl">
+                    <div class="ml-[20px]">
+                        <h1 class="text-[20px] font-medium text-[#1fbec1] hover:text-[#378292] cursor-pointer">Lập trình viên viết blog, làm freelance, youtuber, học UI UX, học Photoshop để làm gì?</h1>
+                        <p class="mt-[10px] ellipsis">
+                            Là 1 lập trình viên thì có nên viết blog, làm freelance, youtuber, học UI UX, học về Photoshop và nhiều cái khác không ? Theo quan điểm của một người có tinh thần ham học hỏi là chính như mình thì khi làm những cái mình kể trên mình học được rất là nhiều thứ chứ không chỉ lập trình viên chỉ biết code thôi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex p-[20px]">
+                    <img src="./img/blog.jpg" alt="" class="h-[158px] w-[166px] rounded-xl">
+                    <div class="ml-[20px] ">
+                        <h1 class="text-[20px] font-medium text-[#1fbec1] hover:text-[#378292] cursor-pointer">Cậu học trò chế tạo cánh tay robot, các giáo sư tiến sĩ Việt Nam ở đâu</h1>
+                        <p class="mt-[10px] ellipsis">
+                            Không phải là các nhà khoa học họ không làm được, mà là họ thấy không cần làm mà thôi. Nói chung là, các giáo sư tiến sĩ, nhà khoa học họ có nhiệm vụ riêng của họ, mỗi người một việc, tuổi nhỏ làm việc nhỏ tùy theo sức của mình.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex p-[20px] ">
+                    <img src="./img/blog1.png" alt="" class="h-[158px] w-[166px] rounded-xl">
+                    <div class="ml-[20px]">
+                        <h1 class="text-[20px] font-medium text-[#1fbec1] hover:text-[#378292] cursor-pointer">Lập trình viên viết blog, làm freelance, youtuber, học UI UX, học Photoshop để làm gì?</h1>
+                        <p class="mt-[10px] ellipsis">
+                            Là 1 lập trình viên thì có nên viết blog, làm freelance, youtuber, học UI UX, học về Photoshop và nhiều cái khác không ? Theo quan điểm của một người có tinh thần ham học hỏi là chính như mình thì khi làm những cái mình kể trên mình học được rất là nhiều thứ chứ không chỉ lập trình viên chỉ biết code thôi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-[#f4f4f4]">
+        <div class="max-w-screen-xl mx-auto mt-[40px] py-[40px] px-[20px] flex justify-between">
+            <div>
+                <h1 class="text-[#03b4ca] font-semibold text-[20px] mb-[10px]">
+                    Code Make
+                </h1>
+                <div class="py-[6px]">
+                    <span>Hotline:</span>
+                    <span>0337146705</span>
+                </div>
+                <div class="py-[6px]">
+                    <span>Email:</span>
+                    <span>nguyenbaphi2k1@gmail.com</span>
+                </div>
+                <div class="flex mt-[12px]">
+                    <a href=""class="w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#0084ff] text-[#fff] text-[20px] hover:no-underline"><i class='bx bxl-linkedin'></i></a>
+                    <a href=""class="w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#0084ff] text-[#fff] ml-[10px] text-[20px] hover:no-underline"><i class='bx bxl-facebook' ></i></a>
+                    <a href="" class="w-[40px] h-[40px] flex justify-center items-center rounded-full bg-[#000] text-[#fff] ml-[10px] text-[20px] hover:no-underline"><i class='bx bxl-github' ></i></a>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#03b4ca] font-semibold text-[20px] mb-[10px]">
+                    Dành cho người mua
+                </h1>
+                <div>
+                    <ul class="list-disc pl-[18px]">
+                        <li class="py-[6px] hover:text-[#378292]">
+                            <a href="" class="hover:no-underline leading-5">Hỗ trợ kỹ thuật</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#03b4ca] font-semibold text-[20px] mb-[10px]">
+                    Dành cho người bán
+                </h1>
+                <div>
+                    <ul class="list-disc pl-[18px]">
+                        <li class="py-[6px] hover:text-[#378292]">
+                            <a href="" class="hover:no-underline leading-5">Hướng dẫn update source code</a>
+                        </li>
+                        <li class="py-[6px] hover:text-[#378292]">
+                            <a href="" class="hover:no-underline leading-5">Hướng dẫn rút tiền</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class="text-[#03b4ca] font-semibold text-[20px] mb-[10px]">
+                    Dịch vụ máy chủ
+                </h1>
+                <div>
+                    <ul class="list-disc pl-[18px]">
+                        <li class="py-[6px] hover:text-[#378292]">
+                            <a href="" class="hover:no-underline leading-5">Đăng ký tên miền</a>
+                        </li>
+                        <li class="py-[6px] hover:text-[#378292]">
+                            <a href="" class="hover:no-underline leading-5">Hosting SSD</a>
+                        </li>
+                        <li class="py-[6px] hover:text-[#378292]">
+                            <a href="" class="hover:no-underline leading-5">Chứng thực SSL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="login hidden">
+        <div class="linner">
+        </div>
+        <form class="absolute form px-[40px] w-[380px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-[#fff] py-[16px] rounded-xl z-10">
+            <h1 class="text-3xl text-center">Đăng nhập</h1>
+            <div class="mt-4 w-full control relative">
+                <input id="username" type="text" placeholder="Tên" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            <div class="mt-5 w-full control relative">
+                <input id="email" type="email" placeholder="Email" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            <div class="mt-5 w-full control relative">
+                <input id="passwork" type="password" placeholder="Mật khẩu" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            
+            <button class="w-full my-[34px] py-[10px] block rounded-3xl bg-[#08b6c9] text-[#fff] text-[18px] font-medium bottom focus:outline-none">Đăng nhập</button>
+            <div class="flex justify-center">
+                <span class="text-center">Không phải thành viên?</span>
+                <p class="text-signin ml-[4px] text-[#ff0076] cursor-pointer decoration-2">Đăng ký</p>
+            </div>
+        </form>
+    </div>
+
+    <div class="signin hidden">
+        <div class="linner2">
+        </div>
+        <form class="absolute form-signin px-[40px] w-[380px] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] bg-[#fff] py-[16px] rounded-xl z-10">
+            <h1 class="text-3xl text-center">Đăng ký</h1>
+            <div class="mt-4 w-full control relative">
+                <input id="username-signin" type="text" placeholder="Tên" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            <div class="mt-5 w-full control relative">
+                <input id="email-signin" type="email" placeholder="Email" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            <div class="mt-5 w-full control relative">
+                <input id="passwork-signin" type="password" placeholder="Mật khẩu" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            <div class="mt-5 w-full control relative">
+                <input id="confirm-passwork-signin" type="password" placeholder="Nhập lại mật khẩu" class="w-full outline-none border-b-[2px]">
+                <small class="text-[#ea7a5b]"></small>
+                <span class="absolute w-[0px] h-[2px] bg-[#5e0eb4] left-[0] top-[25px] ease-linear"></span>
+            </div>
+            <button class="w-full my-[34px] py-[10px] block rounded-3xl bg-[#08b6c9] text-[#fff] text-[18px] font-medium bottom focus:outline-none">Đăng ký</button>
+        </form>
+    </div>
+    <div class="messager fixed bottom-[0] right-[1%] items-start justify-center cursor-pointer">
+        <div class="open-mess flex justify-center w-[56px] h-[56px] absolute bottom-[20px] right-[0] rounded-full bg-[#0084ff] shadow-lg shadow-[#fff]-500/50">
+            <i class='bx bxl-messenger text-[60px] text-[#ffff]'></i>
+            <p class="w-[20px] h-[20px] absolute right-0 bg-[#ed242a] rounded-full flex items-center justify-center text-[#fff] ">2</p>
+        </div>
+        <div class="modal-mess absolute bottom-[90px] right-[0] w-[400px] bg-[#fff] shadow shadow-blue-500/100 rounded-2xl py-[38px] px-[20px] hidden origin-bottom-right">
+            <div class="flex justify-between header">
+                <div class="text-[30px] text-[#fff] bg-[#08b6c9] rounded-[100%] w-[40px] h-[40px] text-center">
+                    <i class='bx bx-code-alt'></i>
+                </div>
+                <div class="flex">
+                    <div class="user flex bg-gray-200 rounded-md items-center px-2 justify-between">
+                        <div class="avatar">
+                            <img src="./img/avatar.jpg" alt="">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div class="option bg-gray-200 flex justify-center items-center rounded-[100%] w-[40px] h-[40px] ml-[10px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                        </svg>
+                    </div>
+                    <div class="close-mess bg-gray-200 flex justify-center items-center rounded-[100%] w-[40px] h-[40px] ml-[10px] text-[#000]">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-2xl font-medium mt-[20px]">Chat với Admin</h2>
+                <span class="text-gray-400">Thường sẽ trả lời trong vòng 1 ngày</span>
+                <p class="my-[30px] font-normal">Xin chào tôi sẵn sàng hỗ trợ bạn về source code</p>
+            </div>
+            <button class="bg-[#08b6c9] w-full py-[10px] rounded-2xl text-[#fff] flex items-center justify-center bottom font-medium hover:bg-[#7ee3ee]">
+                <i class='bx bxl-messenger text-[20px] text-[#fff]'></i>
+                <span>Tiếp tục dưới tên Phi</span>
+            </button>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./dist/app.js"></script>
+  </body>
+</html>
